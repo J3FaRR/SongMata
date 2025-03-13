@@ -5,5 +5,5 @@ let's data collection 🤷🏻
 is a Telegram bot programmed in python, with telebot module
 
 # how to use?
-• install python 3.10 or latest version
-• install the module
+``install python 3.10 or latest version``
+``install the module``
