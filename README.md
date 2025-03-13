@@ -1,6 +1,3 @@
-# SongMata
-let's data collection 🤷🏻
-
 # what's SongMata?
 is a Telegram bot programmed in ``python3``, with ``telebot`` module
 
