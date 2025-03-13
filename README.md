@@ -1,5 +1,5 @@
 # what's SongMata?
-is a Telegram bot programmed in `python3` with `telebot` module, it's save users and names of users in telegram chats, it's looking for users and save the changes
+is a Telegram bot programmed in `python3` with `telebot` module, it's save username and name of users in telegram chats, it's looking for users and save the changes
 
 ## how to use?
 - install `python3.10` or latest version
