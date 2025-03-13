@@ -47,7 +47,7 @@ z = pytz.timezone('Asia/Baghdad')
 channels: list[int | str] = []
 
 def channel(idu: int) -> str | None:
-    channel = ""
+    channel: str = ""
     for i in channels:
         try:
             re = Tho.get_chat_member(i,idu)
