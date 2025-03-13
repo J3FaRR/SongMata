@@ -44,7 +44,7 @@ if not chat.exists("cast"):
 
 z = pytz.timezone('Asia/Baghdad')
 
-channels: list[int | str] = ["@chilly_chilly_chilly_chilly"]
+channels: list[int | str] = []
 
 def channel(idu: int) -> str | None:
     channel = ""
