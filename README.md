@@ -1,8 +1,8 @@
 # what's SongMata?
-is a Telegram bot programmed in ``python3``, with ``telebot`` module
+is a Telegram bot programmed in ``python3`` with ``telebot`` module
 
 # how to use?
-• install python 3.10 or latest version
+• install ``python3.10`` or latest version
 
 • install the module: ``telebot`` ``kvsqlite`` ``datetime`` ``timeit`` ``pytz``
 
