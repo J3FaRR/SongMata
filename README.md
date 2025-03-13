@@ -1,15 +1,34 @@
 # what's SongMata?
-is a Telegram bot programmed in `python3` with `telebot` module, it's save username and name of users in telegram chats, it's looking for users and save the changes
+
+Is a Telegram bot programmed in `python3` with `telebot`.
+It saves usernames and names of users in telegram chats.
+To later search through the records and view name history for accounts.
 
 ## how to use?
-- install `python3.10` or latest version
 
-- install the modules: `telebot` `kvsqlite` `datetime` `timeit` `pytz`
+- install `python3.10` or latest version:
 
-- put your telegram id in `line 8` in `id` variable
+  ```bash
+  sudo apt install python3 -y
+  ```
 
-- put your telegram bot token in `line 10` in `TOKEN` variable
+- install the required modules:
 
-- if you want; put your channel username in the `channels` list variable, and make your bot an admin in the channel
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-- put a star ⭐ and enjoy 👾
+- put your telegram id in `line 8` in `id` variable.
+
+- put your telegram bot token in `line 10` in `TOKEN` variable.
+
+- if you want, put your channel username in the `channels` list variable,
+  and promote your bot to an admin in the channel.
+
+- and run!
+
+  ```bash
+  python3 main.py
+  ```
+
+## remember to put a star ⭐ and enjoy 👾
