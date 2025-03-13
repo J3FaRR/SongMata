@@ -63,7 +63,7 @@ def check(idu: int, name: str, username: str) -> list:
     m: str = t[1]
     s: str = t[2]
     if h > 12:
-        h = h - 12
+        h: int = h - 12
         td: str = f"[{d} | {h}:{m}:{s} pm]"
     else:
         td: str = f"[{d} | {h}:{m}:{s} am]"
@@ -137,10 +137,10 @@ def cast(msg, text: str, type: str) -> None:
         for id in keys:
             ids.append(chat.get(id[0]))
     i ,F ,T = 0,0,0
-    start = timer()
+    start: int = timer()
     Tho.send_message(
-        chat_id = msg.chat.id,
-        text=f"""*بدأت الاذاعة:*
+        chat_id: int = msg.chat.id,
+        text: str =f"""*بدأت الاذاعة:*
 عدد المستخدمين : {len(ids)}""")
     for Id in ids:
         i = i+1
@@ -149,14 +149,14 @@ def cast(msg, text: str, type: str) -> None:
                 Id,
                 text
                 )
-            T = T+1
+            T: int = T+1
         except:
-            F = F+1
-    end = timer()
-    ttt = end-start
+            F: int = F+1
+    end: int = timer()
+    ttt: int = end-start
     Tho.send_message(
                 chat_id=msg.chat.id,
-                text =f"""*أنتهت الاذاعة:*
+                text: str =f"""*أنتهت الاذاعة:*
 عدد المستخدمين : {len(ids)}
 نجحت لـ : {T}/{T+F}  -  {round((T/(T+F))*100,2)}%
 فشلت لـ : {F}/{T+F}  -  {round((F/(T+F))*100,2)}%
@@ -170,7 +170,7 @@ def mainF(msg):
     username: str = msg.from_user.username
     if not pr.exists(f"user_{idu}"):
         pr.set(f"user_{idu}",idu)
-    i = channel(idu)
+    i: None | str = channel(idu)
     if i:
         Tho.reply_to(msg,f"*أشترك بالقناة لتتمكن من استخدام البوت\n{i}أشترك وأرجع أرسل /start*")
         check(idu,name,username)
@@ -278,7 +278,7 @@ def mainget(msg):
     idu: int = msg.from_user.id
     name: str = msg.from_user.full_name
     username: str = msg.from_user.username
-    i = channel(idu)
+    i: None | str = channel(idu)
     if i:
         Tho.reply_to(msg,f"*أشترك بالقناة لتتمكن من استخدام البوت\n{i}أشترك وأرجع أرسل /start*")
         check(idu,name,username)
