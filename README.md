@@ -10,4 +10,4 @@ is a Telegram bot programmed in ``python3`` with ``telebot`` module
 
 • put your telegram bot token in ``line 10`` in ``TOKEN`` variable
 
-• and enjoy 👾
+• put a star ⭐ and enjoy 👾
