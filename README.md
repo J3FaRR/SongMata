@@ -10,4 +10,6 @@ is a Telegram bot programmed in ``python3`` with ``telebot`` module
 
 • put your telegram bot token in ``line 10`` in ``TOKEN`` variable
 
+• if you want; put your channel username in the ``channels`` list variable, and make your bot an admin in the channel
+
 • put a star ⭐ and enjoy 👾
