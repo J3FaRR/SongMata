@@ -139,8 +139,8 @@ def cast(msg, text: str, type: str) -> None:
     i ,F ,T = 0,0,0
     start: int = timer()
     Tho.send_message(
-        chat_id: int = msg.chat.id,
-        text: str =f"""*بدأت الاذاعة:*
+        chat_id = msg.chat.id,
+        text = f"""*بدأت الاذاعة:*
 عدد المستخدمين : {len(ids)}""")
     for Id in ids:
         i = i+1
@@ -155,8 +155,8 @@ def cast(msg, text: str, type: str) -> None:
     end: int = timer()
     ttt: int = end-start
     Tho.send_message(
-                chat_id=msg.chat.id,
-                text: str =f"""*أنتهت الاذاعة:*
+                chat_id = msg.chat.id,
+                text = f"""*أنتهت الاذاعة:*
 عدد المستخدمين : {len(ids)}
 نجحت لـ : {T}/{T+F}  -  {round((T/(T+F))*100,2)}%
 فشلت لـ : {F}/{T+F}  -  {round((F/(T+F))*100,2)}%
